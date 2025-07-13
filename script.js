@@ -6,7 +6,12 @@ const supabaseUrl = 'https://vxmrcfyhqcjwxiptidrk.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4bXJjZnlocWNqd3hpcHRpZHJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTExODc1MzIsImV4cCI6MjA2Njc2MzUzMn0.9eY00nEH4plUnLc9V_HXZiMwsX_OuhDD9sa8_MJvOW0'
 const client = supabase.createClient(supabaseUrl, supabaseKey)
 
-
+function mergeDateTime(preferredDate,preferredTime) {
+        
+    const mergedDateTime = new Date(`${preferredDate}T${preferredTime}`);
+    console.log(mergedDateTime);
+    return mergedDateTime;
+}
 // Car data
 const cars = [
     {
@@ -550,6 +555,7 @@ showToast('Signup successful!', 'success');
 
     console.log(firstName);
 
+    const mergedDateTime = mergeDateTime(preferredDate,preferredTime);
     //const car = cars.find(c => c.id === preferredVehicle);
        
 
@@ -557,8 +563,7 @@ showToast('Signup successful!', 'success');
            event:"Schedule Test Drive",
            Details:{
                preferredVehicle:preferredVehicle,
-               preferredDate:preferredDate,
-               preferredTime:preferredTime,
+               preferredDate:mergedDateTime,
                specialRequirements:specialRequirements
             },
             user: {
@@ -814,18 +819,15 @@ testDriveModal.addEventListener('hidden.bs.modal', function () {
     const email = document.getElementById('testDriveEmail').value;
     const phone = document.getElementById('testDrivePhone').value;
     const preferredVehicle = document.getElementById('testDriveCar').value;
-    const preferredDate = document.getElementById('testDriveDate').value;
-    const preferredTime = document.getElementById('testDriveTime').value;
-    const specialRequirements = document.getElementById('testDriveRequirements').value;
+    //const preferredDate = document.getElementById('testDriveDate').value;
+    //const preferredTime = document.getElementById('testDriveTime').value;
+    //const specialRequirements = document.getElementById('testDriveRequirements').value;
   console.log("Test Drive Abandoned");
 
   window.adobeDataLayer.push({
     event: "Test Drive Abandoned",
     Details: {
-        preferredVehicle:preferredVehicle,
-        preferredDate:preferredDate,
-        preferredTime:preferredTime,
-        specialRequirements:specialRequirements
+        preferredVehicle:preferredVehicle
     },
     user: {
         email:email,
