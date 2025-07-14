@@ -19,7 +19,7 @@ const cars = [
         name: "Elite Sedan S-Class",
         description: "Premium luxury sedan with advanced safety features and unmatched comfort",
         price: 89900,
-        year: 2024,
+        year: "2024",
         category: "Luxury Sedan",
         imageUrl: "./car 1.avif",
         features: [
@@ -44,7 +44,7 @@ const cars = [
         name: "Thunder Coupe GT",
         description: "High-performance sports coupe with racing-inspired design and cutting-edge technology",
         price: 125500,
-        year: 2024,
+        year: "2024",
         category: "Sports Coupe",
         imageUrl: "./car 2.avif",
         features: [
@@ -69,7 +69,7 @@ const cars = [
         name: "Prestige SUV X7",
         description: "Spacious luxury SUV perfect for families with premium amenities and safety features",
         price: 95900,
-        year: 2024,
+        year: "2024",
         category: "Luxury SUV",
         imageUrl: "./car 3.avif",
         features: [
@@ -94,7 +94,7 @@ const cars = [
         name: "Volt Premium EV",
         description: "Cutting-edge electric vehicle with zero emissions and advanced autonomous features",
         price: 115900,
-        year: 2024,
+        year: "2024",
         category: "Electric",
         imageUrl: "./car 4.avif",
         features: [
@@ -119,7 +119,7 @@ const cars = [
         name: "Breeze Convertible",
         description: "Open-air luxury convertible with premium materials and exhilarating performance",
         price: 138900,
-        year: 2024,
+        year: "2024",
         category: "Convertible",
         imageUrl: "./car 5.avif",
         features: [
@@ -144,7 +144,7 @@ const cars = [
         name: "City Elite Compact",
         description: "Agile and efficient luxury compact car designed for urban sophistication",
         price: 65900,
-        year: 2024,
+        year: "2024",
         category: "Compact Luxury",
         imageUrl: "./car 6.avif",
         features: [
