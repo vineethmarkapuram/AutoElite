@@ -10,7 +10,7 @@ function mergeDateTime(preferredDate,preferredTime) {
         
     const mergedDateTime = new Date(`${preferredDate}T${preferredTime}`);
     console.log(mergedDateTime);
-    return mergedDateTime;
+    return mergedDateTime.toISOString();
 }
 // Car data
 const cars = [
