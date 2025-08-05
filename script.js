@@ -555,7 +555,7 @@ showToast('Signup successful!', 'success');
 
     console.log(firstName);
 
-    const mergedDateTime = mergeDateTime(preferredDate,preferredTime);
+    const mergedDateTime = mergeDateTime(preferredDate,preferredTime).toString();
     //const car = cars.find(c => c.id === preferredVehicle);
        
 
@@ -877,6 +877,7 @@ quoteModal.addEventListener('hidden.bs.modal', function () {
 });
     }
 });
+
 
 
 
