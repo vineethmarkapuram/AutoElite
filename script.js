@@ -15,7 +15,7 @@ function mergeDateTime(preferredDate,preferredTime) {
 // Car data
 const cars = [
     {
-        id: 1,
+        id: "1",
         name: "Elite Sedan S-Class",
         description: "Premium luxury sedan with advanced safety features and unmatched comfort",
         price: 89900,
@@ -40,7 +40,7 @@ const cars = [
         badge: "Featured"
     },
     {
-        id: 2,
+        id: "2",
         name: "Thunder Coupe GT",
         description: "High-performance sports coupe with racing-inspired design and cutting-edge technology",
         price: 125500,
@@ -65,7 +65,7 @@ const cars = [
         badge: "Performance"
     },
     {
-        id: 3,
+        id: "3",
         name: "Prestige SUV X7",
         description: "Spacious luxury SUV perfect for families with premium amenities and safety features",
         price: 95900,
@@ -90,7 +90,7 @@ const cars = [
         badge: "Family"
     },
     {
-        id: 4,
+        id: "4",
         name: "Volt Premium EV",
         description: "Cutting-edge electric vehicle with zero emissions and advanced autonomous features",
         price: 115900,
@@ -115,7 +115,7 @@ const cars = [
         badge: "Electric"
     },
     {
-        id: 5,
+        id: "5",
         name: "Breeze Convertible",
         description: "Open-air luxury convertible with premium materials and exhilarating performance",
         price: 138900,
@@ -140,7 +140,7 @@ const cars = [
         badge: "Luxury"
     },
     {
-        id: 6,
+        id: "6",
         name: "City Elite Compact",
         description: "Agile and efficient luxury compact car designed for urban sophistication",
         price: 65900,
@@ -877,6 +877,7 @@ quoteModal.addEventListener('hidden.bs.modal', function () {
 });
     }
 });
+
 
 
 
