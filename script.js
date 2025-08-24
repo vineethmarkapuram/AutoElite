@@ -876,9 +876,7 @@ quoteModal.addEventListener('hidden.bs.modal', function () {
   window.adobeDataLayer.push({
     event: "Request Quotation Abandoned",
     Details: {
-        preferredVehicle:preferredVehicle,
-        financingOption:financingOption,
-        specialRequirements:specialRequirements
+        preferredVehicle:preferredVehicle
     },  
     user: {
         email:email,
@@ -890,6 +888,7 @@ quoteModal.addEventListener('hidden.bs.modal', function () {
 });
     }
 });
+
 
 
 
