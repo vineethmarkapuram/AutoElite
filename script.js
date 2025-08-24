@@ -6,6 +6,19 @@ const supabaseUrl = 'https://vxmrcfyhqcjwxiptidrk.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4bXJjZnlocWNqd3hpcHRpZHJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTExODc1MzIsImV4cCI6MjA2Njc2MzUzMn0.9eY00nEH4plUnLc9V_HXZiMwsX_OuhDD9sa8_MJvOW0'
 const client = supabase.createClient(supabaseUrl, supabaseKey)
 
+function setDefaultText() {
+    const textarea = document.getElementById('testDriveRequirements');
+    if (!textarea.value.trim()) {
+        textarea.value = 'No special requirements';
+    }
+}
+function setDefaultText1() {
+    const textarea = document.getElementById('quoteComments');
+    if (!textarea.value.trim()) {
+        textarea.value = 'No special requirements';
+    }
+}
+
 function mergeDateTime(preferredDate,preferredTime) {
         
     const mergedDateTime = new Date(`${preferredDate}T${preferredTime}`);
@@ -877,6 +890,7 @@ quoteModal.addEventListener('hidden.bs.modal', function () {
 });
     }
 });
+
 
 
 
